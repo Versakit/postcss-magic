@@ -1,0 +1,14 @@
+{
+  "name": "postcss-magic-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter play dev",
+    "build": "pnpm --filter play build",
+    "lib:build": "pnpm --filter postcss-magic build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
