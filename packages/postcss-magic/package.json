@@ -1,16 +1,24 @@
 {
   "name": "postcss-magic",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "private": false,
   "type": "module",
   "types": "./dist/types/index.d.ts",
   "description": "",
   "main": "./dist/index.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Versakit/postcss-magic/tree/main"
+  },
+  "bugs": {
+    "url": "https://github.com/Versakit/postcss-magic/issues"
+  },
   "scripts": {
     "build": "rollup -c"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jannik",
+  "license": "MIT",
   "dependencies": {
     "rollup": "^4.34.2"
   },
