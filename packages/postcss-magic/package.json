@@ -1,11 +1,18 @@
 {
   "name": "postcss-magic",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
   "types": "./dist/types/index.d.ts",
   "description": "",
   "main": "./dist/index.esm.js",
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "postcss",
+    "css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Versakit/postcss-magic/tree/main"
