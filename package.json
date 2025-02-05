@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "pnpm --filter play dev",
     "build": "pnpm --filter play build",
-    "lib:build": "pnpm --filter postcss-magic build"
+    "lib:build": "pnpm --filter postcss-magic build",
+    "docs:dev": "pnpm --filter docs docs:dev",
+    "docs:build": "pnpm --filter docs docs:build",
+    "docs:preview": "pnpm --filter docs docs:preview"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
 }
