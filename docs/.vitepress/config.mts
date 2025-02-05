@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { getGuideSidebar } from "./config/getGuideSidebar";
 import { getNav } from "./config/getnav.ts";
+import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 
 export default defineConfig({
   title: "PostCss-Magic",
@@ -9,7 +10,17 @@ export default defineConfig({
     nav: getNav(),
     sidebar: {
       "/guide/": getGuideSidebar(),
+      "/docs/": [],
     } as any,
     socialLinks: [{ icon: "github", link: "https://github.com/Versakit/postcss-magic" }],
+  },
+
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin);
+    },
+  },
+  vite: {
+    plugins: [groupIconVitePlugin()],
   },
 });
