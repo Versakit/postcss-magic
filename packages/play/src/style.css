@@ -18,9 +18,16 @@
   }
 }
 
-@each $item in primary, success, warn, error {
-  .bg-$(item) {
-    background-color: var(--theme-$(item)-500);
+@each $item in a, b, c {
+  .icon-$(item) {
+    background: url("$(item).png");
+  }
+}
+
+@each $size, $color in (sm, md), (red, blue) {
+  .badge-$(size) {
+    font-size: 14px;
+    color: $(color);
   }
 }
 
