@@ -61,24 +61,39 @@ module.exports = {
 Here is a simple example of using @if and @else in CSS:
 
 ```css
-@if (max-width: 768px) {
-    body {
-        background - color: lightblue;
-    }
+@if 1 + 1 == 2 {
+  .true {
+    color: green;
+  }
 } @else {
-    body {
-        background - color: lightgreen;
-    }
+  .false {
+    color: red;
+  }
+}
+```
+
+```css
+@each $item in a, b, c {
+  .icon-$(item) {
+    background: url("$(item).png");
+  }
+}
+
+@each $size, $color in (sm, md), (red, blue) {
+  .badge-$(size) {
+    font-size: 14px;
+    color: $(color);
+  }
 }
 ```
 
 And an example of using @for to generate a series of classes:
 
 ```css
-@for $i from 1 to 5 {
-  .box - $(i) {
-    width: 10px _ $i;
-    height: 10px _ $i;
+@for $i from 1 through 12 {
+  .col-$(i) {
+    width: calc($(i) / 100%);
+    order: $(i);
   }
 }
 ```
